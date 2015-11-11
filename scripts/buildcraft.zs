@@ -31,8 +31,8 @@ recipes.addShaped(laser, [[ingotTitanium, redstone, null], [manaDiamond, lensDam
 //Change laser table recipes
 recipes.remove(assemblyTable);
 recipes.addShaped(assemblyTable, [[ingotTitanium, redstone, ingotTitanium], [ingotTitanium, manaDiamond, ingotTitanium], [ingotTitanium, gearDiamond, ingotTitanium]]);
-recipes.remove(advCrafter);
-recipes.addShaped(advCrafter, [[ingotTitanium, craftingTable, ingotTitanium], [ingotTitanium, chest, ingotTitanium], [ingotTitanium, chipsetRedstone, ingotTitanium]]);
+//recipes.remove(advCrafter);
+//recipes.addShaped(advCrafter, [[ingotTitanium, craftingTable, ingotTitanium], [ingotTitanium, chest, ingotTitanium], [ingotTitanium, chipsetRedstone, ingotTitanium]]);
 recipes.remove(integrationTable);
 recipes.addShaped(integrationTable, [[ingotTitanium, redstone, ingotTitanium], [ingotTitanium, chipsetRedstone, ingotTitanium], [ingotTitanium, gearDiamond, ingotTitanium]]);
 recipes.remove(chargingTable);

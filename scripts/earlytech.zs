@@ -29,6 +29,7 @@ val ingotRutile = <Mariculture:materials:3>;
 val nuggetRutile = <Mariculture:materials:37>;
 val ironWheel = <Mariculture:crafting:11>;
 val glass = <ore:glass>;
+val ingotAluminum = <TConstruct:materials:11>;
 
 //Ores
 val oreIron = <minecraft:iron_ore>;
@@ -43,6 +44,8 @@ val limestone = <Mariculture:limestone>;
 val oreCopper = <Forestry:resources:1>;
 val oreTin = <Forestry:resources:2>;
 val oreNetherRutile = <NetherOres:tile.netherores.ore.1:9>;
+val oreNetherOsmium = <NetherOres:tile.netherores.ore.1:4>;
+val oreOsmium = <Mekanism:OreBlock>;
 
 //Machines
 val crucibleFurnace = <Mariculture:machines_multi>;
@@ -122,4 +125,11 @@ engineWood.displayName = "Wooden Engine";
 
 //Change process of turning nether rutile to rutile to require blast furnace
 furnace.remove(oreRutile);
-BlastFurnace.addRecipe(oreNetherRutile, false, false, 300, oreRutile * 2);
+BlastFurnace.addRecipe(oreNetherRutile, true, false, 300, oreRutile * 2);
+
+//Change process of turning nether osmium to osmium ore to require blast furnace
+furnace.remove(oreOsmium);
+BlastFurnace.addRecipe(oreNetherOsmium, true, false, 300, oreOsmium * 2);
+
+//Add recipe to directly smelt aluminum ore
+furnace.addRecipe(ingotAluminum, oreAluminum);

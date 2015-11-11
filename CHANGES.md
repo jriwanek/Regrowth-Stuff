@@ -1,10 +1,13 @@
 # Change Log
 
 ## 0.3.1
+### Mod Changes:
 - Updated Agricraft to 0.0.11a
 - Updated Buildcraft to 6.2.4
 - Updated Carpenter's Blocks to v3.3.4 DEV
 - Updated Gravestone to 2.11.1
+### Config Changes:
+### Quest Changes:
 - Fixed Detection of Quest 'What a Tool'
 
 ## 0.4 - First Public Release
@@ -42,6 +45,7 @@
 - Updated WAILA to 1.5.7a
 - Updated WAILA Plugins to 0.0.1-10
 - Updated Witchery to 0.21.1
+### Config Changes:
 - Added Agricraft mutation for wormwood, requires wispy cotton nearby
 - Disabled Vanilla Farming! - Use Agricraft crops for all your farming needs!
 - Fancy New Main Menu!
@@ -270,6 +274,7 @@ Quest Changes:
 ### Config Changes:
 - Mariculture
 	- Disabled NEI Casting Handler. Should fix some weird crashes
+### Quest Changes:
 
 ## 0.6.2
 ### Mod Changes:
@@ -362,30 +367,40 @@ Quest Changes:
 
 ## 0.7
 ### Mod Changes:
+- Re-Added Binnie's Mods version 2.0-pre8
 - Added CreeperCollateral 1.0.0B3-6
 - Added Enchiridion 2 version 2.0c
 - Added Enhanced Inventories version 1.0.8
 - Added INpureCore version 1.0.0B9-54
+- Added Magic Bees version 2.1.22
 - Added Super Crafting Frame version 1.7.10.3
-- Added Witching Gadgets version 1.0.7
+- Added Witching Gadgets version 1.1.2
 - Updated Agricraft to 1.3.1
+- Updated Applied Energistics 2 to Rv-2-beta-10
 - Updated Automagy to 0.21.0
+- Updated Bibliocraft to 1.10.2
 - Updated Blood Magic to 1.3.1-7
-- Updated Botania to 1.5-168
-- Updated Buildcraft to 6.4.1
+- Updated Botania to 1.5-169
+- Updated Buildcraft to 6.4.3
 - Updated Buildcraft Compat to 6.4.0
 - Updated Chisel to 2.3.7.34
 - Updated Forbidden Magic to 0.561
-- Updated Garden Stuff to 1.4.0
+- Updated Forge Multipart to 1.1.1.323
+- Updated Garden Stuff to 1.5.2
+- Updated Iguana Tinker's Tweaks to 2.1.3
 - Updated JABBA to 1.2.1a
-- Updated Mariculture to 1.2.4f-27
-- Updated Modtweaker to 0.7.1
+- Updated Mariculture to 1.2.4f
+- Updated Mekanism (+Generators) to 7.1.2.185
+- Updated Minecraft Forge to 10.13.2.1291
+- Updated Modtweaker to 0.7.4
 - Updated Railcraft to 9.5.0.0
-- Updated Storage Drawers to 1.3.0
+- Updated Storage Drawers to 1.3.1
 - Updated TC Node Tracker to 1.0.4
 - Updated Thaumcraft to 4.2.3.5
+- Updated Tinker's Construct to 1.8.3b
 - Updated Traveller's Gear to 1.15.6
 - Updated ttCore to 0.1-66
+- Updated Witchery to 0.23.2
 ### Config Changes:
 - Agricraft
 	- Stripped out the configurations I'd done previously to shift it all to minetweaker scripts
@@ -393,6 +408,10 @@ Quest Changes:
 	- Enabled Environmentally friendly creepers config option so they won't be completely destroying your stuff making obnoxious holes in the ground
 - CreeperCollateral
 	- Explosions now completely destroy blocks - no more tnt nether mining! :D
+- Ender Zoo
+	- Blacklisted Concussion Creepers from spawning in the Outer Lands
+	- Enabled Enderminies attacking creepers
+	- Dire Wolves actually spawn now
 - Forestry
 	- Disabled crafting window creation of bronze with ingots
 - Gravestone
@@ -418,6 +437,8 @@ Quest Changes:
 	- Added Certus Quartz electron tube
 - Resource Loader
 	- Enforce pre-1.5 Botania textures (I think the new ones are too high contrast and look bad) #IHateChange?
+- Storage Drawers
+	- Activated invert shift config. Left click behaviour is now the same as JABBA barrels
 - Traveller's Gear
 	- Redid the traveller's gear slot arrangement again to make space to include the traveller's gear specific slots (cloak, pauldron, vambrace) now that there's a mod in the pack that uses them
 - Thaumic Exploration
@@ -427,6 +448,7 @@ Quest Changes:
 - Witchery
 	- Halve spawn weight of Hellhounds as they were somewhat drowning out other mobs
 	- Added lots of plants (~60) to mutandis mutations - namely saplings from EBXL and Natura and flowers from vanilla MC and EBXL
+	- Added Cracked sand to list of blocks replacable by the rite of nature's power
 - Witching Gadgets
 	- Added Cracked sand to list of blocks TC Eldritch Obelisks and Hilltop Stones can spawn on
 - Minetweaker Scripts
@@ -452,20 +474,28 @@ Quest Changes:
 	- Removed dye essence -> cactus green recipe to encourage farming of cactus
 	- Added smeltery and crucible furnace melting recipes for elemental essences
 	- Removed air essence -> feather recipe
-	- Added recipes for spawn eggs for 8 more mobs, mostly hostile
+	- Added recipes for spawn eggs for 9 more mobs, mostly hostile but 2 are passive
 	- Removed Steel Blocks and Hopper minecarts from mineshaft dungeon loot (witch circles pull from this). Them being there still was an oversight - woops
 	- Changed recipe for thaumometer to require a mana lens instead of glass
+	- Remove Witchery garlic from seed drops and add mutation for it
+	- Fixed accidental use of .withTag() instead of .onlyWithTag() making energy cubes other than basic not craft properly
+	- Fixed there being two different recipes for making osmium ore from osmium essence
+	- Remove recipes for seed bags that had been missed previously
+	- Hide all seed bags in NEI
+	- Added alternate recipe for crafting table that requires a 3x3 to make, so first crafting table will still require hatchet, but any further ones don't necessarily - mostly because AE apparently doesn't like the hatchet recipe for autocrafting
+	- Remove Ender Essence from the Regular Infusion stone recipe so that its craftable in the Spirit world
+	- Expanded the Mana Alchemy recipe for beehives to include the ones from Extra Bees and Magic Bees
+	- Now Wither Witches can't drop redstone either.
 ### Quest Changes:
 - Added a new quest in "What the World Came to" to reflect the new requirement for Tilled Garden Soil for Magic crops
 - Added a quest about the garden trowel and flower arranging
 - Bumped rep requirement for "The Witching Hour" from 20 to 30 to account for recent additions making the quest available slightly too early
 - Added a quest for the forestry worktable
-- Rejigged a large number of requirements that previously required completing certain seed quests to instead require new hidden conditional quests for theappropriate resources. This should also reduce the amount of nested requirements causing lag with some quests.
+- Rejigged a large number of requirements that previously required completing certain seed quests to instead require new hidden conditional quests for the appropriate resources. This should also reduce the amount of nested requirements causing lag with some quests.
 - Added 31 new quests to "The Life of the World" for the various seeds that can be mutated with Agricraft
 - Removed Subdued spirits from quest "Dream a Little Dream of Me" as they can prove rather difficult to obtain before you've necessarily got a dream rather than a nightmare
 - Added a quest for the sheep spawn egg now that it has a recipe
-- Rejigged a number of quest rewards - including nerfing many of the floral fertilizer reward amounts as it was a little too potent with very little need to
-ever make more.
+- Rejigged a number of quest rewards - including nerfing many of the floral fertilizer reward amounts as it was a little too potent with very little need to ever make more.
 - Moved rep requirements into seperate trigger quests to hopefully help make sure they unlock more reliably
 - Lowered time to repeat on tier one essence quests to 2 MC days from 3
 - Changed the rewards for all the essence seed quests to make the choice more meaningful
@@ -475,3 +505,467 @@ ever make more.
 - Added a quest for the Super Crafting Frame
 - Added quests for more spawn eggs
 - Initial Thaumcraft quests!
+- Moved Quest "On the Move" to "What the World Embraces"
+
+## 0.7.1
+### Mod Changes:
+- Updated Enchiridion 2 to 2.0d
+- Updated Modtweaker to 0.7.5
+Config Changes:
+- CodeChickenCore
+	- Actually made creepers environmentally friendly this time
+- Enhanced Inventories
+	- Disabled Natura Wood integration as Tigerwood seemed to be causing a recipe lookup crash in NEI
+- Witchery
+	- Disabled Village spawns since witchery decided it wanted to spawn villages in wasteland type biomes
+- Minetweaker Scripts
+	- Fix dye essence -> cactus green recipe removal also resulting in eelgrass to cactus green removal
+### Quest Changes:
+- Fix Quest "What a Tool" AGAIN. Apparently this breaks every time TiC updates...
+- Made quests for dandelion and poppy seeds require quest "Soiled Plans"
+- Made quest "It's Essential" no longer require "Soiled Plans". Hopefully this will allow worlds to transition from 0.6.5 better
+
+## 0.7.2
+### Mod Changes:
+- Updated Applied Energistics 2 to rv2-beta-14
+- Updated Botania to 1.5-170
+- Updated Buildcraft to 6.4.4
+- Updated Buildcraft Compat to 6.4.1
+- Updated Enchiridion 2 to 2.0e
+- Updated Forbidden Magic to 0.562
+- Updated Garden Stuff to 1.5.3
+- Updated Iguana Tinker's Tweaks to 2.1.4
+- Updated Storage Drawers to 1.3.4
+- Updated WAILA to 1.5.10
+- Updated WAILA Plugins to 0.0.1-14
+### Config Changes:
+- Agricraft
+	- Added two more crops for growing Cinnabar and Amber
+- Ender Zoo
+	- Lower attack damage of direwolves to 6 (3 hearts) from 10 (5 hearts)
+	- Lower Spawn rates of direwolves to 2
+- Minetweaker Scripts
+	- Fixed Sheep and Bat Spawn egg recipes
+	- Make Nether Wart grow in any light level
+	- Added a research and crucible recipes to make cinderpearl and shimmerleaf
+	- Nerfed the Magical Food recipe. Now requires 1 of each MC standard crop so takes a bit more effort to get
+### Quest Changes:
+- Fixed Quest "...Has a Silver Lining" accidentaly not having been quite finished, meaning it had been incompletable before.
+- Fixed requiring 2 Mystical Lime flower seeds for quest "Mystical Flowers Tertiary"
+- Added info to quest "A Sight For Sore Eyes" regarding TC Node Tracker and how to use it
+- Added a quest on moving nodes in jars
+- Added a quest introducing Wand Foci
+- Added quests for the two new essence seeds
+- Added quests on Compartments and the Drawer Controller
+- Added a quest on Flower pots
+- Added a third cartography quest regarding waypoint compasses
+
+## 0.7.3
+### Mod Changes:
+- Updated Automagy to 0.22.1
+- Updated Bagginses to 2.0.1
+- Updated Botania to 1.5-173
+- Updated Buildcraft to 6.4.6
+- Updated Buildcraft Compat to 6.4.2
+- Updated Enchiridion 2 to 2.0f-63
+- Updated Enhanced Inventories to 1.0.11
+	- Now 100% Less Crashy!
+- Updated Garden Stuff to 1.5.6
+- Updated Mariculture to 1.2.4.1
+- Updated Storage Drawers to 1.3.6
+- Updated Witching Gadgets to 1.1.3
+- Downgraded WAILA Plugins to 0.0.1-13 from 0.0.1-14
+## Config Changes:
+- Applied Energistics 2
+	- Disabled Tiny TNT (it bypasses the explosion changes which prevent an exploit)
+- COFH Core
+	- Added a bunch of stuff to underground generation in the spirit world, including 4 more ores, netherrack and grout
+- Enhanced Inventories
+	- Re-enabled Natura compat as it should be fixed now
+- Iguana Tinker's Tweaks
+	- Added numbers to Harvest Level names to make the progression more apparent
+- Witching Gadgets
+	- Disabled Nugget Transmutation recipes (this fixes a weird issue with scanning some Enhanced Inventories Chests)
+- Minetweaker Scripts
+	- Changed recipe for bloomery furnace - now made in the carpenter(initial step towards 0.8 tech progression refactor around the blast furnace)
+### Quest Changes:
+- Changed quest "Pottering About" to use a detect rather than crafting task
+- Made quest "Feeling Salty" able to trigger off any quest that might result in getting a mariculture book
+- Added a note to quest "Fishy Situation" saying how fishing is not biome specific
+- Linked a number of quests in "What the World Embraces" to resource triggers
+- "Capping Show" now requires 60 Acanist rep to unlock along with the other initial TC quests
+- Added quest for garlic
+- Added info regarding accessing the Ench2 Library to quest "Bound in Print"
+
+## 0.7.4
+### Mod Changes:
+- Updated Bagginses to 2.0.2
+- Updated Botania to 1.6-174
+- Updated Buildcraft to 6.4.7
+- Updated Chisel 2 to 2.3.9.36
+- Updated Mariculture to 1.2.4.1a
+### Config Changes:
+- COFH Core
+	- Fixed the broken additions to spirit world ore gen I'd done in 0.7.3 - my bad
+-Iguana Tinker's Tweaks
+	- Reverted changing the harvest level names as doing so just outright broke them
+### Quest Changes:
+
+## 0.8.0
+### Mod Changes:
+- Added Accidentally Circumstantial Events version 1.8.0
+- Added Arcane Arteries version 0.6
+- Added Biome Tweaker version 1.2.128
+- Added Blood Arsenal version 1.1-14
+- Added Companions version 1.2
+- Added Crafting Tweaks version 1.0.18
+- Added Guide-API version 1.0.1-20
+- Added Millenaire version 6.0.0
+- Added Sanguimancy version 1.1.9-32
+- Added Similsax Transtructors version 1.7.10.11
+- Added Storage Drawers: Forestry Pack version 1.0.1
+- Added Storage Drawers: Natura Pack version 1.0.2
+- Added YuutoLib version 1.0.1
+	- New coremod for Enhanced Inventories
+- Replaced ttCore with EnderCore version 0.0.1.4-alpha
+- Removed Steve's Barren lands
+	- Same function now achieved through BiomeTweaker
+- Removed YAMPST
+	- As it was fairly useless with the high levels of traffic Regrowth generates
+- Updated Automagy to 0.26.3
+- Updated Agricraft to 1.4.0-beta-2
+- Updated Applied Energistics 2 to rv2-stable-10
+- Updated Bagginses to 2.1.1
+- Updated Bibliocaft to 1.10.6
+- Updated Binnie's Mods to 2.0-pre14
+- Updated Blood Magic to 1.3.3-13
+- Updated Botania to 1.7-211
+- Updated Buildcraft to 7.0.20
+- Updated Buildcraft Compat to 7.0.11
+- Updated Carpenter's Blocks to 3.3.6
+- Updated Chisel 2 to 2.5.0.42
+- Updated CodeChickenCore to 1.0.7.46
+- Updated COFH Core to 3.0.3-303
+- Updated Enchiridion 2 to 2.0.1
+	- (and removed Ench1 as it is now packaged in Ench2)
+- Updated Ender Zoo to 1.0.15.32
+	- Direwolves are less obnoxious now
+- Updated Enhanced Inventories to 1.1.3
+- Updated ExtraTiC to 1.4.5
+- Updated Forbidden Magic to 0.57
+- Updated Forestry to 3.6.3.20
+- Updated Garden Stuff to 1.6.3
+- Updated Gravestone to 2.12.4
+- Updated Hardcore Questing Mode to 4.2.4
+- Updated INpure Core to 1.0.0B9-62
+- Updated Magic Bees to 2.3.4
+- Updated Mariculture to 1.2.4.2a
+- Updated Mekanism to 8.1.7.252
+- Updated ModTweaker to 0.9.2
+- Updated NEI Addons to 1.12.11.36
+- Updated NEI Integration to 1.0.12
+- Updated NetherOres to 2.3.0-12
+- Updated NotEnoughItems to 1.0.5.111
+- Updated Railcraft to 9.7.0.0
+- Updated Storage Drawers to 1.5.15
+- Updated Tinker's Construct to 1.8.7
+- Updated TC Node Tracker to 1.1.2
+- Updated Thaumcraft NEI Plugin to 1.7a
+- Updated Thaumic Exploration to 1.1-53
+- Updated TiC Tooltips to 1.2.5
+- Updated Traveller's Gear to 1.16.5
+- Updated WAILA Harvestability to 1.1.2
+- Updated WAILA Plugins to 0.1.0-18
+- Updated Witchery to 0.24.1
+- Updated Witching Gadgets to 1.1.9
+### Config Changes:
+- ACE
+	- Secret feature stuffs
+- AE2
+	- Transferred processor recipes over to AE custom recipe system instead of MT - resolves issue with recipe caching based crash
+- BiomeTweaker
+	- Override EBXL Mountainous desert to be Mountainous Wasteland
+	- Add zombie/skeleton cats and dogs to mob spawns
+- Botania
+	- In line with Vazkii's request to pack devs in general, Passive flowers will now wither. 
+		- As a middle ground between the old setting and the new default it has been set to wither after 5 in-game days
+- Buildcraft
+	- Allow non asembly table based facade crafting
+- Carpenter's Blocks
+	- Enabled Routable fluids
+	- Increased fluidity of moving up/down slopes to be smooth rather than being like walking up/down stairs
+- Climate Control
+	- Add Mountainous Wasteland Biome to worldgen
+- COFH Core
+	- Change Red Sand appearance in oceans slightly - now stops at ~40y so the actual ocean floor will mostly be regular sand while raised parts will be red sand
+	- Increase level of grass -> cracked sand replacement to accomodate the increased height of the beach at Mountainous Wasteland biomes - this WILL make worldgen a bit laggier, but unfortunately it is necessary
+	- Add decoration function for dead grass, allowing it to now spawn in ocean, beach and mountainous wastelands - all the worldgen biomes are now viable starts!
+	- Changed Dream world generation of saplings to be a decoration rather than replace function
+- Ender Zoo
+	- Enderminies no longer attack creepers
+- Forestry
+	- Enabled small chance (0.1%) to get a second princess when breeding bees
+- Gravestone
+	- Lowered chance for mobs spawning from gravestones from 20 to 5
+	- Enabled crafting of the special zombie and skeleton spawners
+- JABBA
+	- Switched shift/normal click behaviour. normal click now gives 1 item, and shift click a stack
+	- Changed construction material for structural upgrades from wooden construction blocks to wooden lattices - Much much cheaper on wood
+- Mariculture
+	- Disabled spawning books on first action
+- Mekanism
+	- Implemented Cardboard box blacklist, courtesy of Kmad
+	- Reduced volume of machine sounds to 60%
+- MobProperties
+	- Secret feature stuffs
+- Nether Ores
+	- Disabled nether ores from being processed in the AE grindstone
+- Railcraft
+	- Disabled Residual Heat
+- Ruins
+	- Added Spirit world to list of dimensions where ruins can spawn - why did I not realize this was a thing sooner...
+	- Secret feature stuffs
+	- A couple of new worldgen structures courtesy of SyberSmoke
+- Storage Drawers
+	- Switched shift/normal click behaviour. normal click now gives 1 item, and shift click a stack
+- Tinker's Construct
+	- Disabled spawning with Materials and You: Volume one. You now get it from an early quest reward.
+- Quadrum
+	- Added a number of new decorative blocks for use in new worldgen ruins
+	- secret feature stuffs
+- Witchery
+	- Removed Natura and Garden Stuff saplings along with vanilla MC flowers from the mutandis pool
+		- Natura saplings as they couldn't be detected properly by the quest book anyway, which was confusing people
+		- Garden Stuff saplings as they were just alternatively shaped vanilla trees
+		- Will make it slightly easier to get some mutandis specific stuff from witchery, but overall reduces the proportion of saplings you'll get with mutandis
+		- Vanilla MC flowers are notably more obtainable with the new shearing mechanics in Agricraft
+- Minetweaker Scripts
+	- Changed Blast Furnace brick recipe - now uses wrought iron lattice instead of sheet titanium
+	- Changed Smelting of Nether Rutile -> Rutile and Nether Osmium -> Osmium ore to occur in blast furnace - gates Titanium and Osmium behind the blast furnace
+	- Changed recipe for sturdy casing to be made in the rolling machine
+	- Made all methods of making steel make it from Wrought Iron instead of normal Iron
+	- Added spawn egg recipes for Witches and Coven Witches
+	- Added recipe for crafting chainmail armour from iron chain links
+	- Added tier 2 Blood altar recipe for crafting Crimson Cult armour from chainmail
+	- Made BC laser tech use titanium in recipe instead of obsidian
+	- Add the torn page from witchery to dungeon and mineshaft chests (and by extension witch circles)
+	- Add Deep, Infernal and Oblivion hives to the alchemy cycle - I'd missed these before due to them not being listed in NEI
+	- Added ways to get Cinderpearl, Shimmerleaf, Taint tendril and vishroom agricraft seeds
+	- Added recipes for the Millenaire civilization scrolls and the village spawning wand
+	- Removed useless alchemy recipe to get poisonous potatoes as agricraft update fixes them not dropping as a rare drop on regular potatoes
+	- Added extra recipes for Infestation Spores from EBXL ToadStools, Botania Shimmering Mushrooms, and Natura Glowshrooms
+	- Removed my alchemy recipes for vanilla flowers as it was added to default Botania
+	- Added Mariculture Ingot and Block caster recipes for Osmium and Refined Glowstone
+### Quest Changes:
+- Changed task of "Guard Tree" to be detection task
+- Adjusted some material trigger quests to be based on ore rather than ingots
+- Reshuffled tech quests to match new progression
+- Added quests for new spawn eggs
+- Secret Quests for a Secret feature
+- Added more witchery quests (I wasn't going to, but new stuff and some holes in the questline meant I couldn't resist)
+- Changed reward for strawberry seeds to be the right type of strawberry
+- Added a couple of quests to "What the World Teaches" for the "Observations of an Immortal" book
+- Added Materials and You: Volume one as a reward for quest "Such a Tool"
+- Added Mariculture books as rewards in relevant quests
+- Added a quest for the Chisel now that it actually renders in the quest book
+- Added quests related to Vampirism
+- Added quests related to Mirror Magic
+- Added quests pertaining to the books of Blood Magic and Sanguimancy
+- Added info to quest "Jarring Revelation" to hint about Automagy's Advanced Node Jarring
+- Added more quests to "The Way the World Feels"
+- Added quests for new seeds in agricraft 1.4 (Cinderpearl, Shimmerleaf, Taint root and Vishroom)
+- Updated seed quests to include information about agricraft mechanic of harvesting with shears to recover an intact flower instead of the dye.
+- Added a bit more information to quest "Flower Power" regarding use of the petal apothecary for those who are new to botania
+- Removed redundant 'eventually' in text for task 2 of quest "Breakdown"
+- Reworked Enhanced Inventories quests a little for the new update and added a quest about the new painter
+
+## 0.8.1
+### Mod Changes:
+- Added AquaTweaks version 1.0
+- Added Storage Drawers: Misc Pack
+	- Storage drawer variants for EBXL, TC and Witchery woods
+- Updated Bibliocraft to 1.11.0
+- Updated Blood Arsenal to 1.2-1
+- Updated Botania to 1.7-221
+- Updated Buildcraft to 7.0.23
+- Updated Buildcraft Compat to 7.0.12
+- Updated Carpenter's Blocks to 3.3.7
+- Updated Chisel to 2.5.1.44
+- Updated ClimateControl to 0.4.beta28
+- Updated Crafting Tweaks to 1.0.23
+- Updated Enhanced Inventories to 1.1.6
+- Updated Garden Stuff to 1.6.8
+	- This makes the Bloomery furnace automation friendly
+- Updated Forestry to 3.6.6.24
+- Updated Mantle to 0.3.2a
+	- This should've been in 0.8.0, but apparently I missed it - woops.
+- Updated Magic Bees to 2.3.5
+- Updated Minetweaker to 3.0.10
+- Updated Modtweaker to 0.9.3
+- Updated Storage Drawers to 1.6.1
+- Updated Storage Drawers: Forestry pack to 1.0.3
+- Updated Storage Drawers: Natura pack to 1.0.3
+- Updated YuutoLib to 1.0.2
+### Config Changes:
+- Biometweaker
+	- Reduce spawn weights of undead pets and direwolves by about half
+	- Prevented undead pets and direwolves from being able to spawn in the nether, end and outer lands
+- CoFH Core
+	- Toned down the spawn rates of the dead grasses to be a bit more in line with versions prior to 0.8
+- EnderCore
+	- Disabled OreDict tooltips
+- EnderZoo
+	- Lowered chance for Khndrel Keght/Dire Slime to spawn when digging dirt without a shovel to 10%
+- MobProperties
+	- Add brakes to undead cats and dogs, reducing their movement speed by 50%. They now move at about the speed of baby zombies
+- Quadrum
+	- Added dummy item "Any Sapling" to use in quest "You Sap" to give better indication of it accepting any sapling
+	- Changed name of dead wood item to dead wood planks - I finally got sick of people not realizing they're planks
+- Resource Loader
+	- Removed old botania textures, reduces the download size of the pack slightly
+- Minetweaker Scripts
+	- Manually Re-add Certus essence -> quartz recipe since it seemingly went missing between versions
+	- Allow red, brown and vishroom mushroom spores to grow in any light level
+	- Change recipe using ender essence to make the end portal frame rather than the end portal block
+	- Fixed Nether Osmium Ore giving Rutile in the Blast furnace (big thanks to secondadvent for this)
+	- Add research and Infusion recipe to corrupt a jarred node into a sinister node
+	- Added research and Infusion recipes for the crimson rites book and the eldritch obelisk placer (normally creative only item)
+	- Remove need for Water Artichoke to have a water block nearby now that water pads are a thing
+	- Add smelting recipe for Aluminum ore -> ingot
+	- Fixed wood slab shenanigans
+### Quest Changes:
+- Fix Detection of Sanguine Scientiem and Delving into the Darkness
+- Fix task for sacrificial knife being a crafting task instead of a detection task
+- Expanded the Botania quest line a bit
+- Replaced oak sapling with dummy "Any Sapling" item in quest "You Sap"
+- Added Companions scrolls as quest rewards for a few different quests. They are also still available as dungeon loot too
+- Split "How the World Changes" into two chapters: "How the World Grows" for the first half, and "How the World Changes" for the second half
+	- This is should help a little with the fps lag from viewing the witchery quests caused by collective nested prerequisites for quests.
+- Fix detection of thaumium bossed silverwood scepter in "Of Staves and Scepters"
+- Added quests for the creation of Sinister nodes, void metal and the crimson rites book
+- Added a few more quests to blood magic, covering Arcane Arteries addon and up to around tier 2
+- Added quests covering the Outer Lands from Thaumcraft
+- Added the first quest for Millenaire
+- Added a quest about Similsax Transtructors
+- Changed rewards for "Wicked Shrubbery" quest
+Note: Known issues from 0.8.0 that are not fixed in this version
+- Agricraft: 
+	- Seed Tier override isn't being applied properly so Essence Seeds are growing slower than intended and can't currently be bonemealed - fixed in next version of Agricraft
+	- Golems are breaking empty crop sticks and high tier seeds when not fully grown - fixed in next version of Agricraft
+	
+## 0.8.2
+### Mod Changes:
+- Downgraded Minetweaker to 3.0.9C
+- Updated Bibliocraft to 1.11.1
+- Updated Blood Arsenal to 1.2-2
+- Updated Crafting Tweaks to 1.0.32
+### Config Changes:
+- LaunchGUI
+	- Updated the launch gui text to be less outdated
+- Millenaire	
+	- Added Trade for Witching Gadgets' "Powerless Pearl" (can be infused to make a primordial pearl) for 3 denier or, requiring reputation Friend of the Village
+- Minetweaker Scripts
+	- Fixed Borked slab recipes from 0.8.1
+### Quest Changes:
+- Fixed detection of Tainted Blood Pendant in "Archer's Momento"
+- Fixed detection of Incense stick in "Smells like Power"
+- Fixed location detection of "The End of the Line"
+- Removed references to Resolute ivy from "Joining the Ivy league" since it doesn't work with gravestones
+- Fixed detection of Thaumaturges Razor in "Of Blood and Blades"
+- Fixed a bunch of typos
+Note: Known issues from 0.8.0 that are not fixed in this version
+- Agricraft: 
+	- Seed Tier override isn't being applied properly so Essence Seeds are growing slower than intended and can't currently be bonemealed - fixed in next version of Agricraft
+	- Golems are breaking empty crop sticks and high tier seeds when not fully grown - fixed in next version of Agricraft
+
+## 0.8.3
+### Mod Changes:
+- Added Block Properties version 0.1.2
+- Change Aquatweaks to disabled by default
+	- Was causing quite a few issues, but don't want to outright remove it
+- Updated ACE to 1.9.0
+- Updated Agricraft to 1.4.3
+	- This fixes the issues with essence seed changes not applying, and with Golems behaving weirdly with crops.
+- Updated Arcane Arteries to 0.7.2
+- Updated Bibliocraft to 1.11.3
+- Updated Blood Arsenal to 1.2-3
+- Updated Botania to 1.7-228
+- Updated Buildcraft to 7.1.12
+- Updated Buildcraft Compat to 7.1.2
+- Updated CraftingTweaks to 1.0.47
+- Updated Enhanced Inventories to 1.1.8
+- Updated Gravestone to 2.13.0
+- Updated HQM to 4.3.2
+- Updated Magic Bees to 2.3.6
+- Updated Mantle to 0.3.2b
+- Updated ModTweaker to 0.9.4
+- Updated Natura to 2.2.1a2
+- Updated NEI to 1.0.5.118
+- Updated Railcraft to 9.8.0.0
+- Updated Similsax Transtructors to 1.7.10.13
+- Updated Storage Drawers to 1.6.2
+- Updated Tinker's Construct to 1.8.8
+- Updated Traveller's Gear to 1.16.6
+- Updated WAILA harvestability to 1.1.3
+- Updated Witching Gadgets to 1.1.10
+### Config Changes:
+- ACE
+	- Added World Load message about pressing H to open the Enchiridion in game wiki
+	- Added functionality of spawning end portal structure with the end portal placer
+- Block Properties
+	- Make End Portal Frame block breakable
+- Blood Arsenal
+	- Disabled Glass Pains
+- Enchiridion 2
+	- First work on adding information to the wiki
+- Ender Zoo
+	- Disabled Khendrel Khegt/Dire Slime - I finally got sick enough of them
+- INpure Core
+	- Script to readd mek stuff in NEI - should fix the inconsistency associated with using MT to do it before (any script reload would result in the machines disappearing from NEI)
+- Forestry
+	- Add EBXL flowers as valid flowers for bees
+- Millenaire
+	- Fixed Client and Server configs for Millenaire not matching
+- MobProperties
+	- Remove iron and add mysterious maps to drops from vanilla zombies to TC angry and furious zombies
+- Quadrum
+	- Fix cobblestone variants dropping cobble with invalid metadata
+	- Added end portal placer, prevents issues with frame block orientation
+- Minetweaker Scripts
+	- Allow Titanium and rutile to be cast into nuggets on TiC casting table
+	- Allow melting down of titanium tool parts to molten titanium
+	- Add smelting recipe for nether sulfur to 6 sulfur dust since sulfur ore seems to have gone AWOL
+	- Fix Natura oredicts and make barley compostable (jriwanek)
+	- Make belladonna, water artichoke, mandrake, wormwood and wolfsbane compostable
+	- Fix Chainmail armour melting down into more iron than it cost to make
+	- Wheat and Barley Flour now requires Mortar and Pestle to make - fixes recipe conflict for Wheat -> Seeds
+	- Made ender essence -> portal frame recipe now create the End Portal Placer instead
+	- Added tooltip to End Portal Placer describing what it does
+	- Added tooltip to Mysterious maps regarding needing to be right clicked to activate the treasure hunt properly
+	- Added all the other Mariculture Limestone variants to the limestone chisel group
+	- Made Nether Saltpeter ore smelt into 6 Saltpeter (dust item) rather than 2 Saltpeter ore. Puts it in line with the previous changes to Nether Sulfur
+	- Comment out the NEI.addEntry() stuff for mek - moved to INpureCore
+### Quest Changes:
+- "End of the Line" quest now looks for the ender portal placer rather than 12 portal frame blocks
+- Added new resource conditional for Osmium ore
+- First Mekanism quests
+	
+## 0.8.4
+### Mod Changes:
+- Updated Botania to 1.7-230
+- Updated Buildcraft to 7.1.13
+- Updated Gravestone to 2.15.1
+- Updated Storage Drawers: Forestry Pack to 1.0.5
+- Updated Storage Drawers: Misc pack to 1.0.1
+- Updated Storage Drawers: Natura pack to 1.0.4
+- Updated WAILA harvestability to 1.1.5
+### Config Changes:
+- AE2
+	- Reduced Power usage from 5x to 3x default
+- Agricraft
+	- Regenerated configs and fixed settings to what they should be
+- Minetweaker Scripts
+	- Fixed Pestle & Mortar dupe
+	- Fixed Recipe for the AE Presses only accepting fully repaired chisel
+### Quest Changes:
+- More mekanism quests

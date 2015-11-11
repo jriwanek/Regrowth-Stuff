@@ -11,6 +11,10 @@ val waterEssence = <magicalcrops:magicalcrops_ElementEssence>;
 val fireEssence = <magicalcrops:magicalcrops_ElementEssence:1>;
 val earthEssence = <magicalcrops:magicalcrops_ElementEssence:2>;
 val airEssence = <magicalcrops:magicalcrops_ElementEssence:3>;
+val blockOsmium = <Mekanism:BasicBlock>;
+val blockRefinedGlowstone = <Mekanism:BasicBlock:4>;
+val ingotOsmium = <Mekanism:Ingot:1>;
+val ingotRefinedGlowstone = <Mekanism:Ingot:3>;
 //Ores
 val oreIron = <minecraft:iron_ore>;
 val oreIronG = <TConstruct:GravelOre>;
@@ -25,14 +29,14 @@ val oreCopper = <Forestry:resources:1>;
 val oreTin = <Forestry:resources:2>;
 
 //Change melting recipes for Chainmail to make iron rather than steel
-Crucible.removeRecipe(<minecraft:chainmail_boots>);
-Crucible.removeRecipe(<minecraft:chainmail_chestplate>);
-Crucible.removeRecipe(<minecraft:chainmail_helmet>);
-Crucible.removeRecipe(<minecraft:chainmail_leggings>);
-Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:iron.molten> * 576);
-Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 1152);
-Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 720);
-Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 1008);
+//Crucible.removeRecipe(<minecraft:chainmail_boots>);
+//Crucible.removeRecipe(<minecraft:chainmail_chestplate>);
+//Crucible.removeRecipe(<minecraft:chainmail_helmet>);
+//Crucible.removeRecipe(<minecraft:chainmail_leggings>);
+Crucible.addRecipe(800, <minecraft:chainmail_boots>, <liquid:iron.molten> * 128);
+Crucible.addRecipe(800, <minecraft:chainmail_chestplate>, <liquid:iron.molten> * 256);
+Crucible.addRecipe(800, <minecraft:chainmail_helmet>, <liquid:iron.molten> * 160);
+Crucible.addRecipe(800, <minecraft:chainmail_leggings>, <liquid:iron.molten> * 224);
 
 //add melting recipes for elemental essences for fun
 Crucible.addRecipe(1200, fireEssence, <liquid:lava> * 250);
@@ -48,6 +52,12 @@ Crucible.addRecipe(600, essenceBerry, <liquid:xp> * 15);
 Crucible.addRecipe(218, <minecraft:cobblestone>, <liquid:stone.seared> * 18);
 Casting.addIngotRecipe(<liquid:stone.seared> * 36, searedBrick);
 Casting.addBlockRecipe(<liquid:stone.seared> * 144, searedSmoothStone);
+
+//Add casting recipes for osmium and refined glowstone
+Casting.addIngotRecipe(<liquid:osmium.molten> * 144, ingotOsmium);
+Casting.addIngotRecipe(<liquid:refined.glowstone.molten> * 144, ingotRefinedGlowstone);
+Casting.addBlockRecipe(<liquid:osmium.molten> * 1296, blockOsmium);
+Casting.addBlockRecipe(<liquid:refined.glowstone.molten> * 1296, blockRefinedGlowstone);
 
 //Tone down Crucible furnace ore output to 1.5x
 //Iron

@@ -14,6 +14,11 @@
 			"function" : "add",
 			"count" : "0.2",
 			"id" : "Quadrum:secret2"
+			},
+			{
+			"function" : "add",
+			"count" : "0.1",
+			"id" : "Quadrum:secret3"
 			}]
 		}]
 	}],

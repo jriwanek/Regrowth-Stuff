@@ -52,6 +52,17 @@ val daisy = <minecraft:red_flower:8>;
 val potato = <minecraft:potato>;
 val poisonPotato = <minecraft:poisonous_potato>;
 
+//Mushrooms
+val toadStool = <ExtrabiomesXL:flower1:6>;
+val shimmerMush = <Botania:mushroom:*>;
+val glowShroom = <Natura:Glowshroom:*>;
+val infestSpores = <Botania:grassSeeds:2>;
+
+//add extra recipes for infestation spores
+ManaInfusion.addInfusion(infestSpores, toadStool, 6500);
+ManaInfusion.addInfusion(infestSpores, shimmerMush, 6500);
+ManaInfusion.addInfusion(infestSpores, glowShroom, 6500);
+
 //add recipe to make ebxl sapling
 recipes.addShapeless(ebxlAcacia, [mcAcacia, crackedSand]);
 
@@ -91,18 +102,6 @@ ManaInfusion.addAlchemy(willow, tigerwood, 5000);
 //Alchemy for potatoes
 //ManaInfusion.addAlchemy(potato, poisonPotato, 5000);
 //ManaInfusion.addAlchemy(poisonPotato, potato, 5000);
-
-//Alchemy for vanilla flowers
-ManaInfusion.addAlchemy(dandelion, daisy, 5000);
-ManaInfusion.addAlchemy(poppy, dandelion, 5000);
-ManaInfusion.addAlchemy(orchid, poppy, 5000);
-ManaInfusion.addAlchemy(allium, orchid, 5000);
-ManaInfusion.addAlchemy(bluet, allium, 5000);
-ManaInfusion.addAlchemy(redTulip, bluet, 5000);
-ManaInfusion.addAlchemy(orangeTulip, redTulip, 5000);
-ManaInfusion.addAlchemy(whiteTulip, orangeTulip, 5000);
-ManaInfusion.addAlchemy(pinkTulip, whiteTulip, 5000);
-ManaInfusion.addAlchemy(daisy, pinkTulip, 5000);
 
 //Get rid of stupid saplingTree oredict
 for natSap in nSaplings {

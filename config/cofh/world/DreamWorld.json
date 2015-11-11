@@ -46,8 +46,9 @@
 			"yVariance": 4
 		},
         "block": "sapling",
+		"material": [],
         "clusterSize": 3,
-        "numClusters": 25,
+        "numClusters": 5,
         "retrogen": "true",
         "biomeRestriction": "none",
         "biomes": [],

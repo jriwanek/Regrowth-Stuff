@@ -49,7 +49,7 @@ val chipsetGold = <BuildCraft|Silicon:redstoneChipset:2>;
 val chipsetDiamond = <BuildCraft|Silicon:redstoneChipset:3>;
 val chipsetQuartz = <BuildCraft|Silicon:redstoneChipset:5>;
 //Other
-val chisel = <chisel:chisel>;
+val chisel = <chisel:chisel:*>;
 var oreChipGold = <ore:chipsetGold>;
 var oreChipDiamond = <ore:chipsetDiamond>;
 var oreChipQuartz = <ore:chipsetQuartz>;
